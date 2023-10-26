@@ -9,6 +9,10 @@ import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.formdev.flatlaf.intellijthemes.FlatArcOrangeIJTheme;
+import com.formdev.flatlaf.intellijthemes.FlatGradiantoDarkFuchsiaIJTheme;
+import com.formdev.flatlaf.intellijthemes.FlatSolarizedDarkIJTheme;
+import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMaterialPalenightIJTheme;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import java.awt.Dimension;
@@ -274,7 +278,14 @@ public class MenuView extends javax.swing.JFrame {
 //        FlatLightLaf.setup();
 //#BF5AF2 #f00 #00C #6FF #33ffff #6ccff
         //FlatLaf.setGlobalExtraDefaults(Collections.singletonMap("@accentColor", "#6ccff"));
-        FlatDarculaLaf.setup();
+//        FlatDarculaLaf.setup();
+
+//      FlatMaterialPalenightIJTheme.setup();
+//      FlatSolarizedDarkIJTheme.setup();
+//      FlatMacDarkLaf.setup();
+//      FlatArcOrangeIJTheme.setup();
+        FlatGradiantoDarkFuchsiaIJTheme.setup();
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MenuView().setVisible(true);
